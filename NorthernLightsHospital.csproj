@@ -176,6 +176,7 @@
     <Resource Include="Images\medecin.jpg" />
     <Resource Include="Images\admin.jpg" />
     <Resource Include="Images\prepose.jpg" />
+    <Content Include="Database\databaseBackup.sql" />
     <Content Include="NorthernLightsHospital.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>NorthernLightsHospital.Context.cs</LastGenOutput>
