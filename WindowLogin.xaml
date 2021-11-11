@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NorthernLightsHospital"
         mc:Ignorable="d"
-        Title="Login" Height="450" Width="800" ResizeMode="NoResize" Background="#FFD4A609" Loaded="Window_Loaded">
+        Title="Login" Height="450" Width="800" ResizeMode="NoResize" Background="#62C370" Loaded="Window_Loaded">
     <Grid>
         <Grid Margin="230,165,230,69">
             <Border BorderThickness="2,2,2,2" BorderBrush="Black"></Border>

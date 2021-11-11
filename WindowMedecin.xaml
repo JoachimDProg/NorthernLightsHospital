@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NorthernLightsHospital"
         mc:Ignorable="d"
-        Title="Medecin" Height="450" Width="800" Background="#FFD4A609" ResizeMode="NoResize" Loaded="Window_Loaded">
+        Title="Medecin" Height="450" Width="800" Background="#62C370" ResizeMode="NoResize" Loaded="Window_Loaded">
     <Grid>
         <Label x:Name="lbl_title" Content="Médecin" Margin="337,26,326,0" VerticalAlignment="Top" FontSize="30" FontFamily="Bahnschrift SemiBold" HorizontalAlignment="Center" Width="129" Height="46"/>
         <ListView x:Name="list_admissions" VerticalAlignment="Top" Margin="55,132,388,0" Height="197" ItemsSource="{Binding}" SelectionChanged="list_admissions_SelectionChanged">
@@ -19,11 +19,16 @@
             </ListView.View>
         </ListView>
         <Label x:Name="lbl_listeAdmissions" Content="Liste Admissions" Margin="148,99,494,0" FontSize="18" FontFamily="Bahnschrift SemiBold" VerticalAlignment="Top" HorizontalAlignment="Center" Width="152" Height="28"/>
-        <Button x:Name="btn_conge" Content="Donner Congé" HorizontalAlignment="Left" Margin="172,378,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" FontSize="14" Width="104" Click="btn_conge_Click"/>
+        <Button x:Name="btn_conge" Content="Donner Congé" HorizontalAlignment="Left" Margin="175,362,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" FontSize="14" Width="104" Click="btn_conge_Click" Height="24"/>
         <Button x:Name="btn_retour" Content="Retour" Margin="10,10,679,377" FontFamily="Bahnschrift SemiBold" FontSize="14" Click="btn_retour_Click"/>
         <TextBox x:Name="txt_nomPatient" HorizontalAlignment="Left" Height="23" Margin="148,334,0,0" FontFamily="Bahnschrift SemiBold" FontSize="14" TextWrapping="Wrap" VerticalAlignment="Top" IsReadOnly="True" Text="{Binding Mode=OneWay}" Width="247"/>
         <Label x:Name="lbl_nomPatient" Content="Nom Complet:" HorizontalAlignment="Left" Margin="50,334,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" FontSize="14"/>
-        <Image HorizontalAlignment="Left" Height="284" Margin="411,99,0,0" VerticalAlignment="Top" Width="356" Source="Images/medecin.jpg"/>
+        <Border BorderBrush="Black" BorderThickness="3" Margin="442,119,16,47" Width="325" Height="245">
+            <Canvas>
+                <Image Height="279" Width="319" Source="Images/medecin.jpg" Canvas.Top="-20"/>
+            </Canvas>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="300" Margin="45,99,0,0" VerticalAlignment="Top" Width="371"/>
 
     </Grid>
 </Window>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NorthernLightsHospital"
         mc:Ignorable="d"
-        Title="Prepose" Height="450" Width="800" Background="#FFD4A609" ResizeMode="NoResize" Loaded="Window_Loaded">
+        Title="Prepose" Height="450" Width="800" Background="#62C370" ResizeMode="NoResize" Loaded="Window_Loaded">
     <Grid>
         <Button x:Name="btn_retour" Content="Retour" Margin="12,11,677,375" FontFamily="Bahnschrift SemiBold" FontSize="14" Click="btn_retour_Click"/>
         <Label x:Name="lbl_title" Content="Préposé" HorizontalAlignment="Center" Margin="342,15,304,0" VerticalAlignment="Top" FontSize="30" FontFamily="Bahnschrift SemiBold" Width="148"/>
@@ -30,6 +30,7 @@
             <Button x:Name="btn_enregistrerPatient" Content="Enregistrer" HorizontalAlignment="Left" Margin="333,94,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" FontSize="14" Width="120" Height="23" Click="btn_enregistrerPatient_Click"/>
             <Label x:Name="lbl_assurance" Content="Assurance: " Margin="494,65,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" FontSize="14" HorizontalAlignment="Left"/>
             <ComboBox x:Name="cb_assurance" HorizontalAlignment="Left" Margin="581,66,0,0" VerticalAlignment="Top" Width="120" FontFamily="Bahnschrift SemiBold" FontSize="14" ItemsSource="{Binding}" SelectedIndex="0"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="129" VerticalAlignment="Top" Width="711"/>
         </Grid>
         <Label x:Name="lbl_patient1" Content="Ajout Patient" HorizontalAlignment="Left" Margin="351,56,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" FontSize="16" Width="139"/>
         <Grid HorizontalAlignment="Left" Height="144" Margin="45,251,0,0" VerticalAlignment="Top" Width="711">
@@ -56,6 +57,7 @@
             <ListBox x:Name="lb_litsDispo" HorizontalAlignment="Left" Height="70" Margin="583,10,0,0" VerticalAlignment="Top" Width="118" ItemsSource="{Binding}" SelectionChanged="lb_litsDispo_SelectionChanged"/>
         </Grid>
         <Label x:Name="lbl_admission" Content="Ajout Admission" HorizontalAlignment="Left" Margin="341,222,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" FontSize="16"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="144" Margin="45,251,0,0" VerticalAlignment="Top" Width="711"/>
 
     </Grid>
 </Window>
